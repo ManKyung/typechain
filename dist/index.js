@@ -1,12 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const person = {
-    name: 'jung',
-    age: 35,
-    gender: 'male',
-};
+class Human {
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+const lynn = new Human('Jung', 22, 'male');
 const sayHi = (person) => {
     return `Hello ${person.name}. You are ${person.age} years old ${person.gender}`;
 };
-console.log(sayHi(person));
+console.log(sayHi(lynn));
 //# sourceMappingURL=index.js.map
